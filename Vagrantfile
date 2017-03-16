@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "bitrixvm7"
   #config.vm.network "forwarded_port", guest: 80, host: 8181, auto_correct: true
   #config.vm.network "forwarded_port", guest: 8888, host: 8888, auto_correct: true
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  #config.vm.network "private_network", ip: "192.168.33.10"
   config.vm.network "public_network"
   config.vm.boot_timeout = 300
   config.vm.synced_folder "www", "/home/bitrix/www/", owner: "bitrix", group: "bitrix", mount_options: ["dmode=775,fmode=664"]
